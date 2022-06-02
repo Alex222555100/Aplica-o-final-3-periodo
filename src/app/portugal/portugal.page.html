@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Portugal</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+Portugal oferece uma grande variedade de destinos turísticos, desde as vilas e aldeias do Norte até ás lindas praias do Sul, alguns dos melhores detinos turísticos são:
+<div *ngFor="let item of portugal" lines="none">
+<ion-card>
+  <img src={{item.image}} />
+  <ion-card-header>
+    <ion-card-subtitle>{{item.subtitle}}</ion-card-subtitle>
+    <ion-card-title>{{item.title}}</ion-card-title>
+  </ion-card-header>
+  <ion-card-content>
+    {{item.description}}
+    
+   
+  </ion-card-content>
+ </ion-card>
+</div>
+
+
+</ion-content>
